@@ -1,0 +1,11 @@
+[package]
+name = "no_std_project_template"
+version = "0.1.0"
+authors = ["Michael Scholten <michael-scholten@hotmail.nl>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+hal = { package = "esp32-hal", version = "0.13.0" }
+esp-backtrace = { version = "0.7.0", features = ["esp32", "panic-handler", "exception-handler", "print-uart"] }
+esp-println       = { version = "0.5.0", features = ["esp32"] }
